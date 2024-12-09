@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: fd58899fe7c3e4145b2c5ef31587c5bf
   - enabled: 1
-    path: Assets/Scenes/Prototyp.unity
+    path: Assets/Scenes/Intro_Szene.unity
     guid: 78ed29bfff22e0f47808545a753ae05b
   - enabled: 1
     path: Assets/Scenes/Prototyp2.unity
@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EmptyRoom.unity
     guid: e0957f3c9d297054e90cf21dc0e408e7
+  - enabled: 1
+    path: Assets/Scenes/Main_Hall.unity
+    guid: b568e9891f1954a4881bc248056de801
+  - enabled: 1
+    path: Assets/Scenes/Toilett.unity
+    guid: ad7393c80ad04ac4882eb7e30327519f
   m_configObjects: {}
