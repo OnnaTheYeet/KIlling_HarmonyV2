@@ -1,16 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RayCast : MonoBehaviour
 {
-    Camera cam;
+    private Camera cam;
     public int scene;
     public bool NeedKey = true;
     public DialogueSystem dialogueSystem;
     public DialogueContainer doorLockedDialogue;
     public DialogueContainer doorUnlockedDialogue;
+
+    public CharacterDialogueTrigger targetDialogueTrigger;
 
     void Start()
     {
@@ -19,60 +19,56 @@ public class RayCast : MonoBehaviour
 
     void Update()
     {
-
-        if (DialogueSystem.IsDialogueActive|| PauseMenu.IsGamePaused)
+        if (DialogueSystem.IsDialogueActive || PauseMenu.IsGamePaused)
         {
             return;
         }
 
-
-        Vector3 mousePos = Input.mousePosition;
-        mousePos.z = 10f;
-        mousePos = cam.ScreenToWorldPoint(mousePos);
-        Debug.DrawRay(transform.position, mousePos);
-
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Physics.Raycast(ray, out RaycastHit hit, 100))
             {
                 if (hit.collider.gameObject == gameObject)
                 {
-                    if (NeedKey)
-                    {
-                        if (Inventory.GetKey)
-                        {
-                            OpenDoor();
-                            if (!GameState.DoorDialoguePlayed)
-                            {
-                                PlayUnlockedDialogue();
-                                GameState.DoorDialoguePlayed = true;
-                            }
-                        }
-                        else
-                        {
-                            PlayLockedDialogue();
-                        }
-                    }
-                    else
-                    {
-                        OpenDoor();
-                        if (!GameState.DoorDialoguePlayed)
-                        {
-                            PlayUnlockedDialogue();
-                            GameState.DoorDialoguePlayed = true;
-                        }
-                    }
+                    HandleInteraction();
                 }
             }
         }
     }
 
+    private void HandleInteraction()
+    {
+        if (NeedKey)
+        {
+            if (Inventory.GetKey)
+            {
+                OpenDoor();
+                PlayUnlockedDialogue();
+                if (targetDialogueTrigger != null)
+                {
+                    targetDialogueTrigger.MakeCharacterVisible();
+                }
+            }
+            else
+            {
+                PlayLockedDialogue();
+                if (targetDialogueTrigger != null)
+                {
+                    targetDialogueTrigger.gameObject.SetActive(false);
+                }
+            }
+        }
+        else
+        {
+            OpenDoor();
+            PlayUnlockedDialogue();
+        }
+    }
 
     public void OpenDoor()
     {
+        Debug.Log("Tür wird geöffnet...");
         SceneManager.LoadScene(scene);
     }
 

@@ -112,8 +112,14 @@ public class DialogueSystem : MonoBehaviour
 
         dialogueCanvas.gameObject.SetActive(false);
 
+        if (DialogueManager.Instance != null && currentDialogue != null)
+        {
+            DialogueManager.Instance.MarkDialogueAsPlayed(currentDialogue);
+        }
+
         Debug.Log("Dialogue finished");
     }
+
 
     private void TypeOutText()
     {
