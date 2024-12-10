@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: fd58899fe7c3e4145b2c5ef31587c5bf
   - enabled: 1
-    path: Assets/Scenes/Prototyp.unity
+    path: Assets/Scenes/Prolog.unity
     guid: 78ed29bfff22e0f47808545a753ae05b
   - enabled: 1
     path: Assets/Scenes/Prototyp2.unity
