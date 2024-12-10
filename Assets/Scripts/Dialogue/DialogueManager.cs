@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -5,6 +6,9 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
     private HashSet<DialogueContainer> playedDialogues = new HashSet<DialogueContainer>();
+
+    public event Action<DialogueContainer> OnDialogueStarted;
+    public event Action<DialogueContainer> OnDialogueFinished;
 
     private void Awake()
     {
@@ -19,6 +23,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public void StartDialogue(DialogueContainer dialogue)
+    {
+        OnDialogueStarted?.Invoke(dialogue);
+    }
+
     public bool HasDialoguePlayed(DialogueContainer dialogue)
     {
         return playedDialogues.Contains(dialogue);
@@ -29,6 +38,7 @@ public class DialogueManager : MonoBehaviour
         if (!playedDialogues.Contains(dialogue))
         {
             playedDialogues.Add(dialogue);
+            OnDialogueFinished?.Invoke(dialogue);
         }
     }
 }
