@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -159,6 +161,28 @@ public class DialogueSystem : MonoBehaviour
 
         DialogueLine line = currentDialogue.lines[index];
 
+        if (line.fontAsset != null)
+        {
+            text.font = line.fontAsset;
+        }
+        else if (currentDialogue.fontAsset != null)
+        {
+            text.font = currentDialogue.fontAsset;
+        }
+
+        text.fontSize = line.fontSize != 0 ? line.fontSize : currentDialogue.fontSize;
+
+        text.color = line.fontColor != Color.clear ? line.fontColor : currentDialogue.fontColor;
+
+        if (line.dialogBoxBackground != null && dialogueCanvas.TryGetComponent(out Image dialogBoxImage))
+        {
+            dialogBoxImage.sprite = line.dialogBoxBackground;
+        }
+        else if (currentDialogue.dialogBoxBackground != null && dialogueCanvas.TryGetComponent(out Image containerDialogBoxImage))
+        {
+            containerDialogBoxImage.sprite = currentDialogue.dialogBoxBackground;
+        }
+
         if (line.spriteChanges != null)
         {
             for (int i = 0; i < line.spriteChanges.Count; i++)
@@ -187,15 +211,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         lineToShow = line.line;
-
-        if (currentDialogue.lines[index].actor != null)
-        {
-            nameTag.text = currentDialogue.lines[index].actor.Name;
-        }
-        else
-        {
-            nameTag.text = "";
-        }
+        nameTag.text = line.actor != null ? line.actor.Name : "";
 
         totalTimeToType = lineToShow.Length * timePerLetter;
         currentTime = 0f;
@@ -204,6 +220,7 @@ public class DialogueSystem : MonoBehaviour
 
         index += 1;
     }
+
 
     IEnumerator SkipText()
     {

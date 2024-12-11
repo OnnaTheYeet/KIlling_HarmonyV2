@@ -64,7 +64,6 @@ public class CharacterDialogueTrigger : MonoBehaviour
         }
     }
 
-
     private IEnumerator DisableCharacterAfterDialogue()
     {
         while (DialogueSystem.IsDialogueActive)
@@ -72,7 +71,29 @@ public class CharacterDialogueTrigger : MonoBehaviour
             yield return null;
         }
 
-        MakeCharacterInvisible();
+        DisableCharacterAndChildren();
+    }
+
+    private void DisableCharacterAndChildren()
+    {
+        gameObject.SetActive(false);
+
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+
+            Collider childCollider = child.GetComponent<Collider>();
+            if (childCollider != null)
+            {
+                childCollider.enabled = false;
+            }
+
+            Renderer childRenderer = child.GetComponent<Renderer>();
+            if (childRenderer != null)
+            {
+                childRenderer.enabled = false;
+            }
+        }
     }
 
     public void SetCharacterInteractivity(bool hasItem)

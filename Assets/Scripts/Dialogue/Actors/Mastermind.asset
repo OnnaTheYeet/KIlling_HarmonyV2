@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Mastermind
   m_EditorClassIdentifier: 
   Name: Mastermind
+  sprites:
+  - {fileID: 21300000, guid: 3562094cd3560e945b2637642e7fe9e2, type: 3}
