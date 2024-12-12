@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
     float RotationX;
     float RotationY;
-    public float MinXRotation = -90f;
+    public float MinXRotation = -110f;
     public float MaxXRotation = 90f; 
     public float MinYRotation = -60f;
     public float MaxYRotation = 60f;

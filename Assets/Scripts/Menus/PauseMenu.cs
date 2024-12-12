@@ -40,6 +40,10 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
     }
 
+    public void Option()
+    {
+        
+    }
     public void ResumeGame()
     {
         pausemenu.SetActive(false);
@@ -54,7 +58,7 @@ public class PauseMenu : MonoBehaviour
 
     public void MainMenu()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 0f;
         SceneManager.LoadScene("MainMenu");
     }
 
