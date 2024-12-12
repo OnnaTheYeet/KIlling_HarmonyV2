@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Hiro
   sprites:
-  - {fileID: 21300000, guid: d8f9e43a9a34db24696179c8a628b620, type: 3}
+  - {fileID: 21300000, guid: cd9d3cff9d3e23641acf80d017491e4e, type: 3}
   - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

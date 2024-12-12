@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Unknown
   m_EditorClassIdentifier: 
   Name: ???
+  sprites:
+  - {fileID: 21300000, guid: 1ab0ceb7a3914d6448ca4fe603c6199a, type: 3}
