@@ -11,10 +11,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlayScene/Prolog.unity
     guid: 78ed29bfff22e0f47808545a753ae05b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Prototyp2.unity
     guid: 86ee794e876757340ac9b3cd75d97700
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EmptyRoom.unity
     guid: e0957f3c9d297054e90cf21dc0e408e7
+  - enabled: 1
+    path: Assets/Scenes/GamePlayScene/Lobby.unity
+    guid: 0981e4dd0571911439591d374f6c94fe
+  - enabled: 1
+    path: Assets/Scenes/GamePlayScene/ToiletteHall.unity
+    guid: 61f16024dee6df04faa0a4a4ba58d18d
+  - enabled: 1
+    path: Assets/Scenes/GamePlayScene/ToToilete.unity
+    guid: c61db1cf53399984c833f8edab7cbb90
+  - enabled: 1
+    path: Assets/Scenes/GamePlayScene/RechteToilette.unity
+    guid: ccd8d9a0bba57a843b183b9faa6f76cc
+  - enabled: 1
+    path: Assets/Scenes/GamePlayScene/LinkeToilette.unity
+    guid: 887dea3fa85322148ae22f1260668395
   m_configObjects: {}

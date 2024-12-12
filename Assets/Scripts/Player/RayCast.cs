@@ -27,7 +27,7 @@ public class RayCast : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 100))
+            if (Physics.Raycast(ray, out RaycastHit hit, 1000))
             {
                 if (hit.collider.gameObject == gameObject)
                 {
