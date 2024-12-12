@@ -1,25 +1,28 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-
 public class DialogueSystem : MonoBehaviour
 {
     public static DialogueSystem Instance { get; private set; }
+    public event Action OnDialogueEnd;
 
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] TextMeshProUGUI nameTag;
     [SerializeField] Canvas dialogueCanvas;
     DialogueContainer currentDialogue;
 
-    [SerializeField] [Range(0f, 1f)] float visibleTextPercent;
+    [SerializeField][Range(0f, 1f)] float visibleTextPercent;
     [SerializeField] float timePerLetter = 0.05f;
     float totalTimeToType, currentTime;
     [SerializeField] float skipTextWaitTime = 0.1f;
     [SerializeField] SpriteManager spriteManager;
     [SerializeField] SpriteManager backgroundManager;
+
+    [SerializeField] TMP_FontAsset defaultFontAsset;
 
     string lineToShow;
 
@@ -39,6 +42,11 @@ public class DialogueSystem : MonoBehaviour
             return;
         }
         Instance = this;
+
+        if (defaultFontAsset == null)
+        {
+            Debug.LogError("Default Font Asset (LiberationSans SDF) is not assigned!");
+        }
     }
 
     private void Start()
@@ -120,8 +128,9 @@ public class DialogueSystem : MonoBehaviour
         }
 
         Debug.Log("Dialogue finished");
-    }
 
+        OnDialogueEnd?.Invoke();
+    }
 
     private void TypeOutText()
     {
@@ -161,52 +170,20 @@ public class DialogueSystem : MonoBehaviour
 
         DialogueLine line = currentDialogue.lines[index];
 
-        if (line.fontAsset != null)
-        {
-            text.font = line.fontAsset;
-        }
-        else if (currentDialogue.fontAsset != null)
-        {
-            text.font = currentDialogue.fontAsset;
-        }
-
+        text.font = line.fontAsset != null ? line.fontAsset : currentDialogue.fontAsset ?? defaultFontAsset;
         text.fontSize = line.fontSize != 0 ? line.fontSize : currentDialogue.fontSize;
 
         text.color = line.fontColor != Color.clear ? line.fontColor : currentDialogue.fontColor;
 
-        if (line.dialogBoxBackground != null && dialogueCanvas.TryGetComponent(out Image dialogBoxImage))
+        if (dialogueCanvas.TryGetComponent(out Image dialogBoxImage))
         {
-            dialogBoxImage.sprite = line.dialogBoxBackground;
-        }
-        else if (currentDialogue.dialogBoxBackground != null && dialogueCanvas.TryGetComponent(out Image containerDialogBoxImage))
-        {
-            containerDialogBoxImage.sprite = currentDialogue.dialogBoxBackground;
-        }
-
-        if (line.spriteChanges != null)
-        {
-            for (int i = 0; i < line.spriteChanges.Count; i++)
+            if (line.dialogBoxBackground != null)
             {
-                if (line.spriteChanges[i].actor == null)
-                {
-                    spriteManager.Hide(line.spriteChanges[i].onScreenImageID);
-                    continue;
-                }
-                int expressionID = line.spriteChanges[i].expression;
-                spriteManager.Set(line.spriteChanges[i].actor.sprites[expressionID], line.spriteChanges[i].onScreenImageID);
+                dialogBoxImage.sprite = line.dialogBoxBackground;
             }
-        }
-
-        if (line.backgroundChanges != null)
-        {
-            for (int i = 0; i < line.backgroundChanges.Count; i++)
+            else if (currentDialogue.dialogBoxBackground != null)
             {
-                if (line.backgroundChanges[i].sprite == null)
-                {
-                    backgroundManager.Hide(line.backgroundChanges[i].onScreenImageID);
-                    continue;
-                }
-                backgroundManager.Set(line.backgroundChanges[i].sprite, line.backgroundChanges[i].onScreenImageID);
+                dialogBoxImage.sprite = currentDialogue.dialogBoxBackground;
             }
         }
 
@@ -220,7 +197,6 @@ public class DialogueSystem : MonoBehaviour
 
         index += 1;
     }
-
 
     IEnumerator SkipText()
     {
