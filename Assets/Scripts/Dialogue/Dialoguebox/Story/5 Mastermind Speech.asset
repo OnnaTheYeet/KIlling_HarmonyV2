@@ -20,7 +20,7 @@ MonoBehaviour:
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    fontSize: 36
+    fontSize: 0
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
@@ -30,7 +30,7 @@ MonoBehaviour:
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    fontSize: 36
+    fontSize: 0
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
@@ -41,7 +41,7 @@ MonoBehaviour:
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    fontSize: 36
+    fontSize: 0
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
@@ -52,7 +52,7 @@ MonoBehaviour:
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    fontSize: 36
+    fontSize: 0
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
@@ -61,13 +61,13 @@ MonoBehaviour:
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-    fontSize: 36
+    fontSize: 0
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
   playOnlyOnce: 1
   dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
   fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  fontSize: 36
+  fontSize: 52
   fontStyle: 0
   fontColor: {r: 1, g: 1, b: 1, a: 1}
