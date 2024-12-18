@@ -223,13 +223,4 @@ public class DialogueSystem : MonoBehaviour
             Instance.TypeOutText();
         }
     }
-
-    void OnGUI()
-    {
-        if (Event.current.type != EventType.Layout && Event.current.type != EventType.Repaint)
-        {
-            Debug.Log($"Unexpected event: {Event.current.type}");
-        }
-    }
-
 }

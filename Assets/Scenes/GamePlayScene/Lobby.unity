@@ -408,7 +408,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3562094cd3560e945b2637642e7fe9e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba1b60b0a267b3e4094c153a19838a56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -567,7 +567,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 668679810}
-  m_Father: {fileID: 1219103181}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -754,7 +754,7 @@ GameObject:
   - component: {fileID: 1219103181}
   - component: {fileID: 1219103180}
   m_Layer: 0
-  m_Name: Darkness
+  m_Name: Darkness Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -773,7 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   darknessObject: {fileID: 601294908}
-  triggerDialogue: {fileID: 11400000, guid: cca998b74d4b90147a5662bba5f602e5, type: 2}
+  triggerDialogue: {fileID: 11400000, guid: 0b30d6b95a08ba842b25d0f272f5b987, type: 2}
 --- !u!4 &1219103181
 Transform:
   m_ObjectHideFlags: 0
@@ -786,8 +786,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 601294914}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1390259343
@@ -900,3 +899,4 @@ SceneRoots:
   - {fileID: 1390259345}
   - {fileID: 1828066882}
   - {fileID: 1219103181}
+  - {fileID: 601294914}
