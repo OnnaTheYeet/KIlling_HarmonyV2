@@ -172,7 +172,6 @@ public class DialogueSystem : MonoBehaviour
 
         text.font = line.fontAsset != null ? line.fontAsset : currentDialogue.fontAsset ?? defaultFontAsset;
         text.fontSize = line.fontSize != 0 ? line.fontSize : currentDialogue.fontSize;
-
         text.color = line.fontColor != Color.clear ? line.fontColor : currentDialogue.fontColor;
 
         if (dialogueCanvas.TryGetComponent(out Image dialogBoxImage))
@@ -188,6 +187,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         lineToShow = line.line;
+
         nameTag.text = line.actor != null ? line.actor.Name : "";
 
         totalTimeToType = lineToShow.Length * timePerLetter;
@@ -197,6 +197,7 @@ public class DialogueSystem : MonoBehaviour
 
         index += 1;
     }
+
 
     IEnumerator SkipText()
     {
@@ -222,4 +223,13 @@ public class DialogueSystem : MonoBehaviour
             Instance.TypeOutText();
         }
     }
+
+    void OnGUI()
+    {
+        if (Event.current.type != EventType.Layout && Event.current.type != EventType.Repaint)
+        {
+            Debug.Log($"Unexpected event: {Event.current.type}");
+        }
+    }
+
 }
