@@ -45,7 +45,7 @@ public class DialogueSystem : MonoBehaviour
 
         if (defaultFontAsset == null)
         {
-            Debug.LogError("Default Font Asset (LiberationSans SDF) is not assigned!");
+            //Debug.LogError("Default Font Asset (LiberationSans SDF) is not assigned!");
         }
     }
 
