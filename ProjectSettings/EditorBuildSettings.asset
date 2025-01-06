@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlayScene/Supermarkt.unity
     guid: 90e3576717e4bf346bb14a8286c6d515
+  - enabled: 1
+    path: Assets/Scenes/GamePlayScene/Murder.unity
+    guid: 820d510275381b04d80597154f4532bd
   m_configObjects: {}
