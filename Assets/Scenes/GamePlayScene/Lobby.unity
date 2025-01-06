@@ -1388,7 +1388,6 @@ GameObject:
   - component: {fileID: 1406464422}
   - component: {fileID: 1406464420}
   - component: {fileID: 1406464424}
-  - component: {fileID: 1406464425}
   m_Layer: 0
   m_Name: Controller/Manager
   m_TagString: Untagged
@@ -1409,8 +1408,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerDialogue: {fileID: 11400000, guid: cca998b74d4b90147a5662bba5f602e5, type: 2}
-  changeVisibilityAtStart: 1
-  changeVisibilityAtEnd: 0
+  changeVisibilityAtStart: 0
+  changeVisibilityAtEnd: 1
   objectsToShow:
   - {fileID: 725099776}
   objectsToHide:
@@ -1445,21 +1444,8 @@ MonoBehaviour:
   triggerDialogue: {fileID: 11400000, guid: 49553664686626246bc0c3d96876b595, type: 2}
   changeVisibilityAtStart: 1
   changeVisibilityAtEnd: 0
-  objectsToShow:
-  - {fileID: 1688056055}
+  objectsToShow: []
   objectsToHide: []
---- !u!114 &1406464425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406464419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9ecbd4af4735045b1c13d6574a740c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1688056054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1580,23 +1566,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4ac46d1ea0b5a342be4c644233562c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1688056057
-MonoBehaviour:
+--- !u!225 &1688056057
+CanvasGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1688056055}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3651ebb598ce4bc4e89fde0dfc9df728, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterDialogue: {fileID: 0}
-  disableCharacterAfterDialogue: 0
-  requireItemForInteraction: 0
-  itemToRequire: {fileID: 0}
-  isInitiallyVisible: 0
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &2061403580
 GameObject:
   m_ObjectHideFlags: 0
