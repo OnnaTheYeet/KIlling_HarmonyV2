@@ -177,8 +177,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -3919796887962296046, guid: 262396159f207354ca572063fbf3015e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 722353876}
   m_SourcePrefab: {fileID: 100100000, guid: 262396159f207354ca572063fbf3015e, type: 3}
+--- !u!1 &722353875 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3919796887962296046, guid: 262396159f207354ca572063fbf3015e, type: 3}
+  m_PrefabInstance: {fileID: 722353874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &722353876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722353875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8885b8f676ffdda47ba02d8f8956dba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 0
+  NeedKey: 1
+  dialogueSystem: {fileID: 0}
+  doorLockedDialogue: {fileID: 11400000, guid: 1de7f69dd61672b45bb39c1d54a3a24a, type: 2}
+  doorUnlockedDialogue: {fileID: 11400000, guid: 1de7f69dd61672b45bb39c1d54a3a24a, type: 2}
+  targetDialogueTrigger: {fileID: 0}
 --- !u!1 &743199363
 GameObject:
   m_ObjectHideFlags: 0

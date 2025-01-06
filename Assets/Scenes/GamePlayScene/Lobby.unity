@@ -371,6 +371,78 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &182500408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182500411}
+  - component: {fileID: 182500410}
+  - component: {fileID: 182500409}
+  m_Layer: 0
+  m_Name: Supermarket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &182500409
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182500408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0, y: 1, z: 0.34639022}
+  m_Center: {x: 0.500002, y: 0, z: 0.0473812}
+--- !u!114 &182500410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182500408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8885b8f676ffdda47ba02d8f8956dba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 7
+  NeedKey: 0
+  dialogueSystem: {fileID: 0}
+  doorLockedDialogue: {fileID: 0}
+  doorUnlockedDialogue: {fileID: 0}
+  targetDialogueTrigger: {fileID: 0}
+--- !u!4 &182500411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182500408}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -187, y: -0.027632, z: -726.4}
+  m_LocalScale: {x: 1, y: 54.447, z: 129.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &211294287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1733,7 @@ SceneRoots:
   - {fileID: 373176911}
   - {fileID: 377456450}
   - {fileID: 2061403583}
+  - {fileID: 182500411}
   - {fileID: 53599589}
   - {fileID: 390122260}
   - {fileID: 660799482}
