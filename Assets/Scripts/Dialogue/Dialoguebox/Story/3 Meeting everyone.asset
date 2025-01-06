@@ -20,7 +20,7 @@ MonoBehaviour:
     fontAsset: {fileID: 0}
     fontSize: 0
     fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    fontColor: {r: 0.7610062, g: 0.6454118, b: 0.16991012, a: 1}
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CArgh, damn it! Open the freakin\u2019 door already!\u201D *thump*
       *thump*"
@@ -106,7 +106,7 @@ MonoBehaviour:
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
-  - line: "\u201CWho\u2019s there?\u201D (alert)"
+  - line: "\u201CWho\u2019s there?\u201D"
     actor: {fileID: 11400000, guid: 175d028426950ef4bbd57a74a3e19791, type: 2}
     spriteChanges: []
     backgroundChanges: []
@@ -152,11 +152,11 @@ MonoBehaviour:
     fontAsset: {fileID: 0}
     fontSize: 0
     fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    fontColor: {r: 0.7169812, g: 0.6016902, b: 0.15106194, a: 1}
     dialogBoxBackground: {fileID: 0}
-  playOnlyOnce: 0
-  dialogBoxBackground: {fileID: 0}
-  fontAsset: {fileID: 0}
+  playOnlyOnce: 1
+  dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
+  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   fontSize: 52
   fontStyle: 0
   fontColor: {r: 1, g: 1, b: 1, a: 1}

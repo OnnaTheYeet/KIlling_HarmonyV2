@@ -1,0 +1,248 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 4 Mastermind
+  m_EditorClassIdentifier: 
+  lines:
+  - line: "\u201CHeeeeeey there! Looks like everyone\u2019s gathered. WONDERFUL!!
+      I\u2019m Mister Bunny, and you\u2019re all starring in my grand Murder Mystery
+      Show!\u201D"
+    actor: {fileID: 11400000, guid: f95d8cc5ab44b8a4cbcc83bdd296a5ce, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI\u2019ve brought you all here so one of you can kill another person!\u201D "
+    actor: {fileID: 11400000, guid: 0f130d8bd5e8ba94ba1a810b9b13fdc0, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYou probably think it\u2019s a prank, a hidden camera show\u2026
+      but nope, nope, nope\u2014this is 100% REAL, my dear contestants!\u201D "
+    actor: {fileID: 11400000, guid: 0f130d8bd5e8ba94ba1a810b9b13fdc0, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYou\u2019ll find detailed rules on the devices in front of you.
+      But just to be crystal clear\u2014if you refuse to play along, you\u2019ll
+      all suffer. Some more than others, heehee~!\u201D "
+    actor: {fileID: 11400000, guid: 0f130d8bd5e8ba94ba1a810b9b13fdc0, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSee ya later! Mwah!\u201D "
+    actor: {fileID: 11400000, guid: 0f130d8bd5e8ba94ba1a810b9b13fdc0, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: '(Whimpering, terrified) '
+    actor: {fileID: 11400000, guid: 79bb4f4da65862046b17228ca2f5ae53, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat the\u2026?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat kind of twisted performance was that?\u201D (muttering to himself)"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CNo way\u2026 This scenario is straight out of a horror story.\u201D"
+    actor: {fileID: 11400000, guid: 175d028426950ef4bbd57a74a3e19791, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CJesus\u2026\u201D"
+    actor: {fileID: 11400000, guid: 5cdf8cd886495a945ae74bcf7d931bac, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: The muscular man picks up one of the devices from the table.
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.8553459, g: 0.7244564, b: 0.1855938, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHuh, when I turn this on it shows a name\u2026 \u2018Marie\u2019\u2026
+      and a little pixel face.\u201D"
+    actor: {fileID: 11400000, guid: 175d028426950ef4bbd57a74a3e19791, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat the\u2014?! That\u2019s my name! Gimme that!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (She swiftly snatches the device from his hand.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.76729554, g: 0.6608037, b: 0.17614006, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYoung people these days\u2026 They\u2019ve got no sense of boundaries.\u201D"
+    actor: {fileID: 11400000, guid: 79bb4f4da65862046b17228ca2f5ae53, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThis is weird. It\u2019s got all our names, hobbies, and who knows
+      what else.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat do you mean \u2018our\u2019?!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CFrom what I can tell, it\u2019s got info on all of us. Says here
+      your name\u2019s Yumi\u2026 Shi\u2026 Shino\u2026 Shinohara?\u201D (struggling
+      with pronunciation)"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi Shinohara, a rising star in the idol scene. Sixteen years old,
+      156 cm tall\u2026 good at singing and piano\u2026\u201D (reading off device)"
+    actor: {fileID: 11400000, guid: 175d028426950ef4bbd57a74a3e19791, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhaaaat?! Are you a fan?! That\u2019s so exciting!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CUm, no, sorry. I\u2019m not into the idol scene. It\u2019s all on
+      the device.\u201D"
+    actor: {fileID: 11400000, guid: 175d028426950ef4bbd57a74a3e19791, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhaaaaat?! Let me see that!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (They all scramble to grab devices.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.74213827, g: 0.66121, b: 0.13769227, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 1
+  dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
+  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}

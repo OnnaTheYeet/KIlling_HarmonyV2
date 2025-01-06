@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VisibilityController : MonoBehaviour
 {
@@ -7,10 +8,15 @@ public class VisibilityController : MonoBehaviour
     public DialogueContainer triggerDialogue;
 
     [Tooltip("Visibility change timing: True = At dialogue start, False = At dialogue end")]
-    public bool changeVisibilityAtStart = false;
+    public bool changeVisibilityAtStart = true;
+
+    public bool changeVisibilityAtEnd = false;
 
     [Header("Targets to Show")]
     public List<GameObject> objectsToShow;
+
+    [Header("Targets to Hide")]
+    public List<GameObject> objectsToHide;
 
     private void Start()
     {
@@ -20,34 +26,49 @@ public class VisibilityController : MonoBehaviour
             {
                 DialogueManager.Instance.OnDialogueStarted += HandleDialogueStarted;
             }
-            else
+
+            if (changeVisibilityAtEnd)
             {
                 DialogueManager.Instance.OnDialogueFinished += HandleDialogueFinished;
             }
         }
     }
 
+    private void OnDestroy()
+    {
+        if (DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.OnDialogueStarted -= HandleDialogueStarted;
+            DialogueManager.Instance.OnDialogueFinished -= HandleDialogueFinished;
+        }
+    }
+
     private void HandleDialogueStarted(DialogueContainer startedDialogue)
     {
-        if (startedDialogue == triggerDialogue)
+        if (startedDialogue == triggerDialogue && changeVisibilityAtStart)
         {
-            ShowObjects();
+            UpdateVisibility();
         }
     }
 
     private void HandleDialogueFinished(DialogueContainer finishedDialogue)
     {
-        if (finishedDialogue == triggerDialogue)
+        if (finishedDialogue == triggerDialogue && changeVisibilityAtEnd)
         {
-            ShowObjects();
+            UpdateVisibility();
         }
     }
 
-    private void ShowObjects()
+    private void UpdateVisibility()
     {
         foreach (GameObject obj in objectsToShow)
         {
             SetVisibility(obj, true);
+        }
+
+        foreach (GameObject obj in objectsToHide)
+        {
+            SetVisibility(obj, false);
         }
     }
 
@@ -61,10 +82,12 @@ public class VisibilityController : MonoBehaviour
             spriteRenderer.enabled = visible;
         }
 
-        BoxCollider boxCollider = obj.GetComponent<BoxCollider>();
-        if (boxCollider != null)
+        Collider collider = obj.GetComponent<Collider>();
+        if (collider != null)
         {
-            boxCollider.enabled = visible;
+            collider.enabled = visible;
         }
+
+        obj.SetActive(visible);
     }
 }

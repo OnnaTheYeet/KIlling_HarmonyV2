@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 12 Hiro Accused
+  m_EditorClassIdentifier: 
+  lines:
+  - line: "\u201CK-Kenji!!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Mary walks in.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.764151, g: 0.7413655, b: 0.12615699, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYo, dude, don\u2019t scream like\u2014\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 \u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: 
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CF-FUCKING SHIT! HOLY\u2014WHAT THE HELL?!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CW-What happened, Hiro?! What did YOU do?!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CW-Wait, what?!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI didn\u2019t do this, Mary!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Ken and Yumi rush in from the east wing.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.76470596, g: 0.7411765, b: 0.1254902, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat\u2019s going on?! Is someone hurt?!\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C!!!\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHiro, did YOU\u2026?!\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHiro\u2026 why?\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi, what do you mean \u2018why\u2019?! I didn\u2019t do this!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Ken restrains Hiro in a hold.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.76470596, g: 0.7411765, b: 0.1254902, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CGotcha, killer! Guess the quiet ones are the scariest. Man, I\u2019m
+      disappointed, kid.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThis is a misunderstanding! Please listen! How could I have killed
+      Kenji in just a few minutes?!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat are you talking about?\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI was talking with Marie just before this! Marie, back me up!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThere\u2019s no way I had the time to run over here, kill him, and
+      clean all this up!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 He\u2019s got a point. This place is huge. He couldn\u2019t
+      have done all this so fast. I think\u2026\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CLook at me! If I\u2019d bashed him like that, I\u2019d be covered
+      in blood!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Ken releases Hiro.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.76470596, g: 0.7411765, b: 0.1254902, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThen who else could\u2019ve done it?\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI was in the women\u2019s restroom, and Ken was in the men\u2019s\u2026\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWait, how do you know Yumi was in the women\u2019s restroom?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWell, I saw her heading that way when I went to the men\u2019s.
+      Then, when we heard the scream, we both ran out.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201COh\u2026 got it.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI don\u2019t think we should pin this all on Hiro just yet. His
+      reasoning makes sense.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYeah\u2026 guess so. But if not him, then who?\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 1
+  dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
+  fontAsset: {fileID: 0}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}

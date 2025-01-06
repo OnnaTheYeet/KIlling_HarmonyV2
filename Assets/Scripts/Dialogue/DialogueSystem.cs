@@ -42,6 +42,7 @@ public class DialogueSystem : MonoBehaviour
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
 
         if (defaultFontAsset == null)
         {
@@ -52,6 +53,7 @@ public class DialogueSystem : MonoBehaviour
     private void Start()
     {
         dialogueCanvas.gameObject.SetActive(false);
+        AssignSkipButton();
         if (debugDialogueContainer != null)
         {
             InitiateDialogue(debugDialogueContainer);
@@ -160,6 +162,19 @@ public class DialogueSystem : MonoBehaviour
         CycleLine();
     }
 
+    public void SkipDialogue()
+    {
+        if (isDialogueActive)
+        {
+            while (index < currentDialogue.lines.Count)
+            {
+                index++;
+            }
+
+            EndDialogue();
+        }
+    }
+
     private void CycleLine()
     {
         if (index >= currentDialogue.lines.Count)
@@ -172,7 +187,6 @@ public class DialogueSystem : MonoBehaviour
 
         text.font = line.fontAsset != null ? line.fontAsset : currentDialogue.fontAsset ?? defaultFontAsset;
         text.fontSize = line.fontSize != 0 ? line.fontSize : currentDialogue.fontSize;
-
         text.color = line.fontColor != Color.clear ? line.fontColor : currentDialogue.fontColor;
 
         if (dialogueCanvas.TryGetComponent(out Image dialogBoxImage))
@@ -188,6 +202,7 @@ public class DialogueSystem : MonoBehaviour
         }
 
         lineToShow = line.line;
+
         nameTag.text = line.actor != null ? line.actor.Name : "";
 
         totalTimeToType = lineToShow.Length * timePerLetter;
@@ -206,6 +221,22 @@ public class DialogueSystem : MonoBehaviour
             PushText();
         }
     }
+
+    private void AssignSkipButton()
+    {
+        Button skipButton = GameObject.Find("SkipButton")?.GetComponent<Button>();
+        if (skipButton != null)
+        {
+            skipButton.onClick.RemoveAllListeners();
+            skipButton.onClick.AddListener(SkipDialogue);
+            Debug.Log("Skip-Button erfolgreich gefunden und zugewiesen.");
+        }
+        else
+        {
+            Debug.LogWarning("Skip-Button konnte nicht gefunden werden. Stelle sicher, dass er in der Szene vorhanden ist und den Namen 'SkipButton' trägt.");
+        }
+    }
+
 
     public static void PauseAllCoroutines()
     {
