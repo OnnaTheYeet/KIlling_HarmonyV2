@@ -10,88 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
-  m_Name: 5 BsP
+  m_Name: 7 Supermarket
   m_EditorClassIdentifier: 
   lines:
-  - line: "\u201CMine\u2019s got information on all of us  and the rules too\u2026\u201D"
-    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 0
-    fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
-    dialogBoxBackground: {fileID: 0}
-  - line: '"So the fit guys name is Ken and the guy in the business suit is called
-      Kenji"'
-    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 0
-    fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
-    dialogBoxBackground: {fileID: 0}
-  - line: "\u201CWhat the hell?! This can\u2019t be real!\u201D"
-    actor: {fileID: 11400000, guid: ab522e5814b3f4e44bbf68e11a4ea4c1, type: 2}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 0
-    fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
-    dialogBoxBackground: {fileID: 0}
-  - line: '(A snippet of a newspaper article appears on the devices.) '
+  - line: '*Hiro and Yumi find a familiar person standing in the supermarket, seemingly
+      looking through the showcased items*'
     actor: {fileID: 0}
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
     fontStyle: 0
-    fontColor: {r: 0.78616345, g: 0.6844324, b: 0.15574926, a: 1}
+    fontColor: {r: 0.7735849, g: 0.71346354, b: 0.14231044, a: 1}
     dialogBoxBackground: {fileID: 0}
-  - line: "Article snippet: \u201CWorldwide surge in group murders\u2014 In the last
-      half year, there have been multiple reported incidents of individuals kidnapped
-      and forced into a so-called \u2018Killing Game.\u2019 Over 39 people have lost
-      their lives, and many more are suspected, including suicides that followed
-      once certain secrets were revealed\u2026\u201D"
-    actor: {fileID: 0}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 36
-    fontStyle: 0
-    fontColor: {r: 0.7610062, g: 0.29801258, b: 0.13640669, a: 1}
-    dialogBoxBackground: {fileID: 0}
-  - line: "\u201C(Panicked scream) I read about this online! This can\u2019t\u2026
-      this can\u2019t be happening!\u201D"
-    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 0
-    fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
-    dialogBoxBackground: {fileID: 0}
-  - line: "\u201CNo no no no no no no!!\u201D"
-    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 0
-    fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
-    dialogBoxBackground: {fileID: 0}
-  - line: (Yumi bolts away in panic, presumably back where Hiro came from.)
-    actor: {fileID: 0}
-    spriteChanges: []
-    backgroundChanges: []
-    fontAsset: {fileID: 0}
-    fontSize: 0
-    fontStyle: 0
-    fontColor: {r: 0.7735849, g: 0.6534492, b: 0.20191048, a: 1}
-    dialogBoxBackground: {fileID: 0}
-  - line: "\u201CThis is all way too intense. I need time to process\u2026\u201D"
+  - line: "\u201CWhat are you two doing here?\u201D"
     actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
     spriteChanges: []
     backgroundChanges: []
@@ -100,8 +32,61 @@ MonoBehaviour:
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
-  - line: "\u201CScrew this, I\u2019m out.\u201D (shaken, leaving the lobby toward
-      the west wing)"
+  - line: "\u201COh hey, Marie! We were just\u2014\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Mary narrows her eyes at Yumi)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7725491, g: 0.7137255, b: 0.14117648, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CUm\u2026 do I have something on my face?\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Mary just stares, silent.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7725491, g: 0.7137255, b: 0.14117648, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CUh\u2026 this is kinda creepy\u2026\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\"Hiro, can we go?\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYou reek, Miss Perfect.\u201D"
     actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
     spriteChanges: []
     backgroundChanges: []
@@ -110,8 +95,8 @@ MonoBehaviour:
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
-  - line: "\u201C\u2026They\u2019re both gone.\u201D"
-    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+  - line: "\u201C!!!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 0}
@@ -119,9 +104,9 @@ MonoBehaviour:
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
-  - line: "\u201CWell, I can\u2019t really blame them. This is a total nightmare.\u201D
-      (sighs heavily)"
-    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+  - line: "\u201C\u2018I\u2019m sooo cute and sooo happy! Look at me, I\u2019m a
+      big shining superstar~!\u2019\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 0}
@@ -129,7 +114,46 @@ MonoBehaviour:
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
-  - line: "\u201CI should find Yumi.\u201D"
+  - line: "\u201CYou idols and your fake lives\u2026 you pretend to love your fans
+      and friends, acting like you\u2019d do anything for them, but it\u2019s all
+      bullshit!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYou don\u2019t love anyone but yourselves!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Mary steps closer to Yumi and Hiro, intimidating.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7725491, g: 0.7137255, b: 0.14117648, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSo who were you planning to kill first, huh?! Spill it, you phony
+      bitch!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CMarie, STOP! That\u2019s going way too far!\u201D"
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
     spriteChanges: []
     backgroundChanges: []
@@ -138,19 +162,27 @@ MonoBehaviour:
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
     dialogBoxBackground: {fileID: 0}
-  - line: "\u201CShe\u2019s terrified. As her best friend, I have to be there for
-      her.\u201D"
-    actor: {fileID: 11400000, guid: ab522e5814b3f4e44bbf68e11a4ea4c1, type: 2}
+  - line: "\u201CShut up, you NPC! I\u2019m not talking to you!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
     spriteChanges: []
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
     fontStyle: 0
     fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Yumi bolts away from the scene.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7725491, g: 0.7137255, b: 0.14117648, a: 1}
     dialogBoxBackground: {fileID: 0}
   playOnlyOnce: 1
   dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
-  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fontAsset: {fileID: 0}
   fontSize: 52
   fontStyle: 0
   fontColor: {r: 1, g: 1, b: 1, a: 1}
