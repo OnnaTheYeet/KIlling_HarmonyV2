@@ -5,40 +5,39 @@ using UnityEngine;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
-    private HashSet<DialogueContainer> playedDialogues = new HashSet<DialogueContainer>();
 
-    public event Action<DialogueContainer> OnDialogueStarted;
-    public event Action<DialogueContainer> OnDialogueFinished;
+    private bool isDialogueFinished = false;
+    private string currentDialogueName;
 
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
-        else
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void StartDialogue(string dialogueName)
+    {
+        currentDialogueName = dialogueName;
+        isDialogueFinished = false;
+    }
+
+    public bool IsDialogueFinished(string dialogueName)
+    {
+        if (currentDialogueName == dialogueName)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            return isDialogueFinished;
         }
+        return false;
     }
 
-    public void StartDialogue(DialogueContainer dialogue)
+    public void EndDialogue()
     {
-        OnDialogueStarted?.Invoke(dialogue);
-    }
-
-    public bool HasDialoguePlayed(DialogueContainer dialogue)
-    {
-        return playedDialogues.Contains(dialogue);
-    }
-
-    public void MarkDialogueAsPlayed(DialogueContainer dialogue)
-    {
-        if (!playedDialogues.Contains(dialogue))
-        {
-            playedDialogues.Add(dialogue);
-            OnDialogueFinished?.Invoke(dialogue);
-        }
+        isDialogueFinished = true;
     }
 }
