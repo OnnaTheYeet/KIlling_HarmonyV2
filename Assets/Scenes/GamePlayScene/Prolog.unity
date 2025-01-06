@@ -1439,7 +1439,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1146753339}
-  m_Father: {fileID: 2065054940}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1460,7 +1460,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerDialogue: {fileID: 11400000, guid: 9c7646a1558723d4b8a7e9bfed1b2dcc, type: 2}
   changeVisibilityAtStart: 1
+  changeVisibilityAtEnd: 0
   objectsToShow: []
+  objectsToHide: []
 --- !u!65 &932507802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1719,8 +1721,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerDialogue: {fileID: 11400000, guid: 0b30d6b95a08ba842b25d0f272f5b987, type: 2}
   changeVisibilityAtStart: 0
+  changeVisibilityAtEnd: 0
   objectsToShow:
   - {fileID: 2065054937}
+  objectsToHide: []
 --- !u!114 &1065457108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3565,8 +3569,7 @@ Transform:
   m_LocalPosition: {x: 26.138199, y: 2.17762, z: -19.434082}
   m_LocalScale: {x: 0.4435, y: 0.2778, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 932507800}
+  m_Children: []
   m_Father: {fileID: 1089538219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2065054941
@@ -4129,3 +4132,4 @@ SceneRoots:
   - {fileID: 451911795}
   - {fileID: 320822981}
   - {fileID: 993252536}
+  - {fileID: 932507800}
