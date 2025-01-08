@@ -20,6 +20,8 @@ public class VisibilityController : MonoBehaviour
 
     private void Start()
     {
+        RestoreVisibilityState();
+
         if (DialogueManager.Instance != null)
         {
             if (changeVisibilityAtStart)
@@ -70,6 +72,8 @@ public class VisibilityController : MonoBehaviour
         {
             SetVisibility(obj, false);
         }
+
+        SaveVisibilityState();
     }
 
     private void SetVisibility(GameObject obj, bool visible)
@@ -89,5 +93,48 @@ public class VisibilityController : MonoBehaviour
         }
 
         obj.SetActive(visible);
+
+        // Speichere den Zustand
+        VisibilityStateManager.SetVisibilityState(obj, visible);
+    }
+
+    private void RestoreVisibilityState()
+    {
+        foreach (GameObject obj in objectsToShow)
+        {
+            if (obj != null)
+            {
+                bool visible = VisibilityStateManager.GetVisibilityState(obj, true);
+                SetVisibility(obj, visible);
+            }
+        }
+
+        foreach (GameObject obj in objectsToHide)
+        {
+            if (obj != null)
+            {
+                bool visible = VisibilityStateManager.GetVisibilityState(obj, true);
+                SetVisibility(obj, visible);
+            }
+        }
+    }
+
+    private void SaveVisibilityState()
+    {
+        foreach (GameObject obj in objectsToShow)
+        {
+            if (obj != null)
+            {
+                VisibilityStateManager.SetVisibilityState(obj, obj.activeSelf);
+            }
+        }
+
+        foreach (GameObject obj in objectsToHide)
+        {
+            if (obj != null)
+            {
+                VisibilityStateManager.SetVisibilityState(obj, obj.activeSelf);
+            }
+        }
     }
 }

@@ -293,6 +293,7 @@ MonoBehaviour:
   requireItemForInteraction: 0
   itemToRequire: {fileID: 0}
   isInitiallyVisible: 1
+  characterID: Yumi_Toilette2
 --- !u!65 &1135383939
 BoxCollider:
   m_ObjectHideFlags: 0

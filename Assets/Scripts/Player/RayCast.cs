@@ -48,6 +48,9 @@ public class RayCast : MonoBehaviour
                 if (targetDialogueTrigger != null)
                 {
                     targetDialogueTrigger.MakeCharacterVisible();
+
+                    // Sichtbarkeitsstatus speichern
+                    VisibilityStateManager.SetVisibilityState(targetDialogueTrigger.gameObject, true);
                 }
             }
             else
@@ -56,6 +59,9 @@ public class RayCast : MonoBehaviour
                 if (targetDialogueTrigger != null)
                 {
                     targetDialogueTrigger.gameObject.SetActive(false);
+
+                    // Sichtbarkeitsstatus speichern
+                    VisibilityStateManager.SetVisibilityState(targetDialogueTrigger.gameObject, false);
                 }
             }
         }
@@ -65,6 +71,8 @@ public class RayCast : MonoBehaviour
             PlayUnlockedDialogue();
         }
     }
+
+
 
     public void OpenDoor()
     {

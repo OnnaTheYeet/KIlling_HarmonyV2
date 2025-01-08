@@ -563,6 +563,7 @@ MonoBehaviour:
   requireItemForInteraction: 0
   itemToRequire: {fileID: 0}
   isInitiallyVisible: 1
+  characterID: Marie_To_Toilette2
 --- !u!212 &1711380199
 SpriteRenderer:
   m_ObjectHideFlags: 0

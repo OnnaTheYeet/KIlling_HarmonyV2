@@ -38,7 +38,7 @@ MonoBehaviour:
     fontAsset: {fileID: 0}
     fontSize: 0
     fontStyle: 0
-    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    fontColor: {r: 0.7924528, g: 0.7700249, b: 0.15325737, a: 1}
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CThis isn\u2019t some nightmare. It's real\u2026\u201D "
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}

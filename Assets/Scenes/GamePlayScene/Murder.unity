@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 744066967}
   - component: {fileID: 744066966}
   - component: {fileID: 744066965}
+  - component: {fileID: 744066969}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -270,6 +271,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &744066969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744066964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3651ebb598ce4bc4e89fde0dfc9df728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDialogue: {fileID: 11400000, guid: 4e2e4d222884cf8449198b5d71d7b522, type: 2}
+  disableCharacterAfterDialogue: 1
+  requireItemForInteraction: 0
+  itemToRequire: {fileID: 0}
+  isInitiallyVisible: 1
+  characterID: Kenji_Death
 --- !u!1 &827436614
 GameObject:
   m_ObjectHideFlags: 0
