@@ -12,18 +12,19 @@ public class CharacterDialogueTrigger : MonoBehaviour
     private Camera cam;
     private bool canInteract = true;
 
+    private void Awake()
+    {
+        CheckInitialVisibility();
+    }
+
+    private void OnEnable()
+    {
+        CheckInitialVisibility();
+    }
+
     private void Start()
     {
         cam = Camera.main;
-
-        if (isInitiallyVisible)
-        {
-            MakeCharacterVisible();
-        }
-        else
-        {
-            MakeCharacterInvisible();
-        }
     }
 
     private void Update()
@@ -48,6 +49,11 @@ public class CharacterDialogueTrigger : MonoBehaviour
 
     private void TriggerDialogue()
     {
+        if (!canInteract || !IsCharacterVisible())
+        {
+            return;
+        }
+
         if (characterDialogue != null)
         {
             Debug.Log("Triggering dialogue: " + characterDialogue.name);
@@ -78,22 +84,9 @@ public class CharacterDialogueTrigger : MonoBehaviour
     {
         gameObject.SetActive(false);
 
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(false);
+        SetCharacterInteractivity(false);
 
-            Collider childCollider = child.GetComponent<Collider>();
-            if (childCollider != null)
-            {
-                childCollider.enabled = false;
-            }
-
-            Renderer childRenderer = child.GetComponent<Renderer>();
-            if (childRenderer != null)
-            {
-                childRenderer.enabled = false;
-            }
-        }
+        VisibilityStateManager.SetVisibilityState(gameObject, false);
     }
 
     public void SetCharacterInteractivity(bool hasItem)
@@ -109,25 +102,45 @@ public class CharacterDialogueTrigger : MonoBehaviour
 
     public void MakeCharacterVisible()
     {
-        gameObject.SetActive(true);
+        if (!gameObject.activeSelf)
+            gameObject.SetActive(true);
 
-        Renderer renderer = GetComponent<Renderer>();
-        if (renderer != null)
+        Renderer mainRenderer = GetComponent<Renderer>();
+        if (mainRenderer != null)
         {
-            renderer.enabled = true;
+            mainRenderer.enabled = true;
         }
 
-        Collider collider = GetComponent<Collider>();
-        if (collider != null)
+        Collider mainCollider = GetComponent<Collider>();
+        if (mainCollider != null)
         {
-            collider.enabled = true;
+            mainCollider.enabled = true;
+        }
+
+        foreach (Transform child in transform)
+        {
+            Renderer childRenderer = child.GetComponent<Renderer>();
+            if (childRenderer != null)
+            {
+                childRenderer.enabled = true;
+            }
+
+            Collider childCollider = child.GetComponent<Collider>();
+            if (childCollider != null)
+            {
+                childCollider.enabled = true;
+            }
         }
 
         SetCharacterInteractivity(true);
+
+        VisibilityStateManager.SetVisibilityState(gameObject, true);
     }
 
     public void MakeCharacterInvisible()
     {
+        gameObject.SetActive(false);
+
         Renderer renderer = GetComponent<Renderer>();
         if (renderer != null)
         {
@@ -140,6 +153,33 @@ public class CharacterDialogueTrigger : MonoBehaviour
             collider.enabled = false;
         }
 
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = false;
+        }
+
         SetCharacterInteractivity(false);
+
+        VisibilityStateManager.SetVisibilityState(gameObject, false);
+    }
+
+    private void CheckInitialVisibility()
+    {
+        bool savedState = VisibilityStateManager.GetVisibilityState(gameObject, isInitiallyVisible);
+        if (savedState)
+        {
+            MakeCharacterVisible();
+        }
+        else
+        {
+            MakeCharacterInvisible();
+        }
+    }
+
+    private bool IsCharacterVisible()
+    {
+        Renderer mainRenderer = GetComponent<Renderer>();
+        return mainRenderer != null && mainRenderer.enabled;
     }
 }

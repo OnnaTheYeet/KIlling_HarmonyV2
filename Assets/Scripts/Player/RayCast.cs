@@ -49,8 +49,8 @@ public class RayCast : MonoBehaviour
                 {
                     targetDialogueTrigger.MakeCharacterVisible();
 
-                    // Sichtbarkeitsstatus speichern
-                    VisibilityStateManager.SetVisibilityState(targetDialogueTrigger.gameObject, true);
+                    GameObject targetObj = targetDialogueTrigger.gameObject;
+                    VisibilityStateManager.SetVisibilityState(targetObj, true);
                 }
             }
             else
@@ -60,8 +60,8 @@ public class RayCast : MonoBehaviour
                 {
                     targetDialogueTrigger.gameObject.SetActive(false);
 
-                    // Sichtbarkeitsstatus speichern
-                    VisibilityStateManager.SetVisibilityState(targetDialogueTrigger.gameObject, false);
+                    GameObject targetObj = targetDialogueTrigger.gameObject;
+                    VisibilityStateManager.SetVisibilityState(targetObj, false);
                 }
             }
         }
@@ -71,8 +71,6 @@ public class RayCast : MonoBehaviour
             PlayUnlockedDialogue();
         }
     }
-
-
 
     public void OpenDoor()
     {

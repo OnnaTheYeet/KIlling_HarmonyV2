@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class VisibilityController : MonoBehaviour
 {
@@ -80,21 +79,10 @@ public class VisibilityController : MonoBehaviour
     {
         if (obj == null) return;
 
-        SpriteRenderer spriteRenderer = obj.GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.enabled = visible;
-        }
-
-        Collider collider = obj.GetComponent<Collider>();
-        if (collider != null)
-        {
-            collider.enabled = visible;
-        }
-
+        // Set visibility of the entire object
         obj.SetActive(visible);
 
-        // Speichere den Zustand
+        // Save visibility state
         VisibilityStateManager.SetVisibilityState(obj, visible);
     }
 
@@ -125,7 +113,8 @@ public class VisibilityController : MonoBehaviour
         {
             if (obj != null)
             {
-                VisibilityStateManager.SetVisibilityState(obj, obj.activeSelf);
+                bool isActive = obj.activeSelf;
+                VisibilityStateManager.SetVisibilityState(obj, isActive);
             }
         }
 
@@ -133,7 +122,8 @@ public class VisibilityController : MonoBehaviour
         {
             if (obj != null)
             {
-                VisibilityStateManager.SetVisibilityState(obj, obj.activeSelf);
+                bool isActive = obj.activeSelf;
+                VisibilityStateManager.SetVisibilityState(obj, isActive);
             }
         }
     }
