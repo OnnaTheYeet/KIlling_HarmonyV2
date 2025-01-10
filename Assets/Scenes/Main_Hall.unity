@@ -398,6 +398,7 @@ MonoBehaviour:
   skipTextWaitTime: 0.1
   spriteManager: {fileID: 0}
   backgroundManager: {fileID: 0}
+  defaultFontAsset: {fileID: 0}
   debugDialogueContainer: {fileID: 0}
 --- !u!1 &1521089842
 GameObject:
@@ -436,6 +437,7 @@ MonoBehaviour:
   dialogueSystem: {fileID: 0}
   doorLockedDialogue: {fileID: 0}
   doorUnlockedDialogue: {fileID: 0}
+  targetDialogueTrigger: {fileID: 0}
 --- !u!65 &1521089844
 BoxCollider:
   m_ObjectHideFlags: 0
