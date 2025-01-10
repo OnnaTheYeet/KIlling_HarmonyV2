@@ -2,19 +2,17 @@ using UnityEngine;
 
 public class MouseLookController : MonoBehaviour
 {
-    public GameObject targetGameObject; // Referenz zum spezifischen GameObject
-    private MouseLook mouseLook; // Referenz zum MouseLook-Skript
+    public GameObject targetGameObject;
+    private MouseLook mouseLook;
 
     private void Awake()
     {
-        // Überprüfe, ob eine Referenz zum Ziel-GameObject vorhanden ist
         if (targetGameObject == null)
         {
             Debug.LogError("Kein Ziel-GameObject zugewiesen! Bitte das Ziel-GameObject im Inspector zuweisen.");
             return;
         }
 
-        // Suche nach der MainCamera und dem MouseLook-Skript
         GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         if (mainCamera != null)
         {
@@ -34,23 +32,31 @@ public class MouseLookController : MonoBehaviour
     {
         if (targetGameObject == null || mouseLook == null)
         {
-            return; // Abbrechen, wenn keine Referenz vorhanden ist
+            return;
         }
 
-        // Wenn das Ziel-GameObject aktiv ist, deaktiviere MouseLook
-        if (targetGameObject.activeSelf)
+        if (Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt))
         {
             if (mouseLook.enabled)
             {
                 mouseLook.enabled = false;
             }
         }
-        // Wenn das Ziel-GameObject nicht aktiv ist, aktiviere MouseLook
         else
         {
-            if (!mouseLook.enabled)
+            if (targetGameObject.activeSelf)
             {
-                mouseLook.enabled = true;
+                if (mouseLook.enabled)
+                {
+                    mouseLook.enabled = false;
+                }
+            }
+            else
+            {
+                if (!mouseLook.enabled)
+                {
+                    mouseLook.enabled = true;
+                }
             }
         }
     }
