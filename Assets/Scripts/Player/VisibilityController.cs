@@ -64,26 +64,23 @@ public class VisibilityController : MonoBehaviour
     {
         foreach (GameObject obj in objectsToShow)
         {
-            SetVisibility(obj, true);
+            if (obj != null)
+            {
+                bool isPersistent = obj.GetComponent<PersistentUI>() != null;
+                VisibilityStateManager.SetVisibilityState(obj, true, isPersistent);
+            }
         }
 
         foreach (GameObject obj in objectsToHide)
         {
-            SetVisibility(obj, false);
+            if (obj != null)
+            {
+                bool isPersistent = obj.GetComponent<PersistentUI>() != null;
+                VisibilityStateManager.SetVisibilityState(obj, false, isPersistent);
+            }
         }
 
         SaveVisibilityState();
-    }
-
-    private void SetVisibility(GameObject obj, bool visible)
-    {
-        if (obj == null) return;
-
-        // Set visibility of the entire object
-        obj.SetActive(visible);
-
-        // Save visibility state
-        VisibilityStateManager.SetVisibilityState(obj, visible);
     }
 
     private void RestoreVisibilityState()
@@ -92,7 +89,8 @@ public class VisibilityController : MonoBehaviour
         {
             if (obj != null)
             {
-                bool visible = VisibilityStateManager.GetVisibilityState(obj, true);
+                bool isPersistent = obj.GetComponent<PersistentUI>() != null;
+                bool visible = VisibilityStateManager.GetVisibilityState(obj, true, isPersistent);
                 SetVisibility(obj, visible);
             }
         }
@@ -101,7 +99,8 @@ public class VisibilityController : MonoBehaviour
         {
             if (obj != null)
             {
-                bool visible = VisibilityStateManager.GetVisibilityState(obj, true);
+                bool isPersistent = obj.GetComponent<PersistentUI>() != null;
+                bool visible = VisibilityStateManager.GetVisibilityState(obj, true, isPersistent);
                 SetVisibility(obj, visible);
             }
         }
@@ -126,5 +125,14 @@ public class VisibilityController : MonoBehaviour
                 VisibilityStateManager.SetVisibilityState(obj, isActive);
             }
         }
+    }
+
+    private void SetVisibility(GameObject obj, bool visible)
+    {
+        if (obj == null) return;
+
+        obj.SetActive(visible);
+
+        VisibilityStateManager.SetVisibilityState(obj, visible);
     }
 }
