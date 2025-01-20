@@ -388,6 +388,56 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 294a5aea3a0b7cb43af58dca3b1b45b0, type: 3}
+--- !u!1 &1254352878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1254352880}
+  - component: {fileID: 1254352879}
+  m_Layer: 0
+  m_Name: Visibility Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1254352879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254352878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d40dec7f205a7654c90c786076f776d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerDialogue: {fileID: 11400000, guid: d38ae15b68aadcb42a42a752d258d72c, type: 2}
+  changeVisibilityAtStart: 0
+  changeVisibilityAtEnd: 1
+  objectsToShow:
+  - {fileID: 1999710849}
+  objectsToHide: []
+--- !u!4 &1254352880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254352878}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.960457, y: 10.713774, z: 1.7066832}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1300540448
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,7 +613,6 @@ MonoBehaviour:
   requireItemForInteraction: 0
   itemToRequire: {fileID: 0}
   isInitiallyVisible: 1
-  characterID: Marie_To_Toilette2
 --- !u!212 &1711380199
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -642,6 +691,7 @@ GameObject:
   - component: {fileID: 1999710852}
   - component: {fileID: 1999710851}
   - component: {fileID: 1999710850}
+  - component: {fileID: 1999710853}
   m_Layer: 0
   m_Name: BAckToLobby
   m_TagString: Untagged
@@ -703,6 +753,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1999710853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999710849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3651ebb598ce4bc4e89fde0dfc9df728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDialogue: {fileID: 0}
+  disableCharacterAfterDialogue: 0
+  requireItemForInteraction: 0
+  itemToRequire: {fileID: 0}
+  isInitiallyVisible: 0
 --- !u!1 &2011401354
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,3 +853,4 @@ SceneRoots:
   - {fileID: 1999710852}
   - {fileID: 1711380200}
   - {fileID: 1300540453}
+  - {fileID: 1254352880}

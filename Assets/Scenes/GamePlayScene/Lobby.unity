@@ -382,6 +382,7 @@ GameObject:
   - component: {fileID: 182500411}
   - component: {fileID: 182500410}
   - component: {fileID: 182500409}
+  - component: {fileID: 182500412}
   m_Layer: 0
   m_Name: Supermarket
   m_TagString: Untagged
@@ -443,6 +444,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &182500412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182500408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3651ebb598ce4bc4e89fde0dfc9df728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDialogue: {fileID: 0}
+  disableCharacterAfterDialogue: 0
+  requireItemForInteraction: 0
+  itemToRequire: {fileID: 0}
+  isInitiallyVisible: 0
 --- !u!1 &211294287
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +598,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5c8b4f88d03ee44b3b17dd9feb2584, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &230809552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230809555}
+  - component: {fileID: 230809554}
+  - component: {fileID: 230809553}
+  m_Layer: 0
+  m_Name: BSPManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &230809553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230809552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 213e7262fcd7fd648a6793580a739c89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetGameObject: {fileID: 1526791934}
+--- !u!114 &230809554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230809552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4ac46d1ea0b5a342be4c644233562c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  category: BSPManager
+--- !u!4 &230809555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230809552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -191.7263, y: 22.3372, z: -570.89}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &373176911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -648,6 +725,7 @@ GameObject:
   - component: {fileID: 377456450}
   - component: {fileID: 377456449}
   - component: {fileID: 377456448}
+  - component: {fileID: 377456451}
   m_Layer: 0
   m_Name: TOToilette
   m_TagString: Untagged
@@ -709,6 +787,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377456451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377456447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3651ebb598ce4bc4e89fde0dfc9df728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDialogue: {fileID: 0}
+  disableCharacterAfterDialogue: 0
+  requireItemForInteraction: 0
+  itemToRequire: {fileID: 0}
+  isInitiallyVisible: 0
 --- !u!1 &396128441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,9 +1628,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1896489370781941928, guid: 3ba7aaf284373324289a2906a965c467, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1400891721}
-    - targetCorrespondingSourceObject: {fileID: 1896489370781941928, guid: 3ba7aaf284373324289a2906a965c467, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1400891722}
     - targetCorrespondingSourceObject: {fileID: 7865225602252191387, guid: 3ba7aaf284373324289a2906a965c467, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1688774847}
@@ -1571,19 +1663,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagToCheck: Darknesstag
---- !u!114 &1400891722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400891719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 213e7262fcd7fd648a6793580a739c89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetGameObject: {fileID: 1526791934}
 --- !u!1 &1406464419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,6 +1732,9 @@ MonoBehaviour:
   changeVisibilityAtEnd: 1
   objectsToShow:
   - {fileID: 1688774846}
+  - {fileID: 377456447}
+  - {fileID: 2061403580}
+  - {fileID: 182500408}
   objectsToHide:
   - {fileID: 869997400}
 --- !u!1 &1526791934 stripped
@@ -1689,6 +1771,7 @@ GameObject:
   - component: {fileID: 2061403583}
   - component: {fileID: 2061403582}
   - component: {fileID: 2061403581}
+  - component: {fileID: 2061403584}
   m_Layer: 0
   m_Name: BackTuShop
   m_TagString: Untagged
@@ -1750,11 +1833,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2061403584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061403580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3651ebb598ce4bc4e89fde0dfc9df728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterDialogue: {fileID: 0}
+  disableCharacterAfterDialogue: 0
+  requireItemForInteraction: 0
+  itemToRequire: {fileID: 0}
+  isInitiallyVisible: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1400891718}
+  - {fileID: 230809555}
   - {fileID: 26299205}
   - {fileID: 1406464422}
   - {fileID: 740163445}

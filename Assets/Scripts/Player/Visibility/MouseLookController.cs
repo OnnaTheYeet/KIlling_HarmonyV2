@@ -7,25 +7,17 @@ public class MouseLookController : MonoBehaviour
 
     private void Awake()
     {
-        if (targetGameObject == null)
-        {
-            Debug.LogError("Kein Ziel-GameObject zugewiesen! Bitte das Ziel-GameObject im Inspector zuweisen.");
-            return;
-        }
+        FindMouseLookComponent();
+    }
 
-        GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
-        if (mainCamera != null)
-        {
-            mouseLook = mainCamera.GetComponent<MouseLook>();
-            if (mouseLook == null)
-            {
-                Debug.LogError("Das MouseLook-Skript wurde auf der MainCamera nicht gefunden!");
-            }
-        }
-        else
-        {
-            Debug.LogError("Kein Objekt mit dem Tag 'MainCamera' gefunden!");
-        }
+    private void OnEnable()
+    {
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void Update()
@@ -58,6 +50,33 @@ public class MouseLookController : MonoBehaviour
                     mouseLook.enabled = true;
                 }
             }
+        }
+    }
+
+    private void FindMouseLookComponent()
+    {
+        GameObject mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        if (mainCamera != null)
+        {
+            mouseLook = mainCamera.GetComponent<MouseLook>();
+            if (mouseLook == null)
+            {
+                Debug.LogError("Das MouseLook-Skript wurde auf der MainCamera nicht gefunden!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Kein Objekt mit dem Tag 'MainCamera' gefunden!");
+        }
+    }
+
+    private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+    {
+        FindMouseLookComponent();
+
+        if (targetGameObject == null)
+        {
+            Debug.LogWarning("Kein Ziel-GameObject gesetzt. Bitte sicherstellen, dass es persistiert oder in der neuen Szene gesetzt wird.");
         }
     }
 }
