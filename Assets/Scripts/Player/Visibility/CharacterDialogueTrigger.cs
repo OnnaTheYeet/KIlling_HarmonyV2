@@ -54,21 +54,27 @@ public class CharacterDialogueTrigger : MonoBehaviour
             return;
         }
 
-        if (characterDialogue != null)
-        {
-            Debug.Log("Triggering dialogue: " + characterDialogue.name);
-            DialogueSystem.Instance.InitiateDialogue(characterDialogue);
-
-            if (disableCharacterAfterDialogue)
-            {
-                StartCoroutine(DisableCharacterAfterDialogue());
-            }
-        }
-        else
+        if (characterDialogue == null)
         {
             Debug.LogError("Character dialogue is null!");
+            return;
+        }
+
+        if (DialogueSystem.Instance == null)
+        {
+            Debug.LogError("DialogueSystem.Instance is null! Make sure the DialogueSystem is present in the scene.");
+            return;
+        }
+
+        Debug.Log("Triggering dialogue: " + characterDialogue.name);
+        DialogueSystem.Instance.InitiateDialogue(characterDialogue);
+
+        if (disableCharacterAfterDialogue)
+        {
+            StartCoroutine(DisableCharacterAfterDialogue());
         }
     }
+
 
     private IEnumerator DisableCharacterAfterDialogue()
     {
