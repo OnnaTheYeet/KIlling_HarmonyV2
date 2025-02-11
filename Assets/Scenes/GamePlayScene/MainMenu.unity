@@ -489,6 +489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd5a50b4ff751f43aed6a911c956005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  buttonClickSound: {fileID: 8300000, guid: f2fbd5aed09357d448c81225483b8b52, type: 3}
 --- !u!1 &268444355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd5a50b4ff751f43aed6a911c956005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  buttonClickSound: {fileID: 8300000, guid: f2fbd5aed09357d448c81225483b8b52, type: 3}
 --- !u!1 &1027996207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd5a50b4ff751f43aed6a911c956005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  buttonClickSound: {fileID: 0}
 --- !u!1 &1045399941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,7 +2450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -439, y: 241}
+  m_AnchoredPosition: {x: -433, y: 268}
   m_SizeDelta: {x: 163.7709, y: 70.951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1523456162
@@ -2501,6 +2507,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Play
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1523456163
