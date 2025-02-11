@@ -1,20 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class RayCast : MonoBehaviour
 {
     private Camera cam;
-    public int scene;
-    public bool NeedKey = true;
-    public DialogueSystem dialogueSystem;
-    public DialogueContainer doorLockedDialogue;
-    public DialogueContainer doorUnlockedDialogue;
+    public int firstScene;  // Intro-Cutscene Szene (Szene 1)
+    public int secondScene;  // Level 1 (Szene 2)
+    public int thirdScene;   // Cutscene Szene (Szene 3)
+    public int fourthScene;  // Level 2 (Szene 4)
 
-    public CharacterDialogueTrigger targetDialogueTrigger;
+    private VideoPlayer videoPlayer;
 
     void Start()
     {
         cam = Camera.main;
+        videoPlayer = FindObjectOfType<VideoPlayer>();  // Findet den VideoPlayer in der Szene
     }
 
     void Update()
@@ -27,7 +28,7 @@ public class RayCast : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 1000))
+            if (Physics.Raycast(ray, out RaycastHit hit, 1000000))
             {
                 if (hit.collider.gameObject == gameObject)
                 {
@@ -39,58 +40,47 @@ public class RayCast : MonoBehaviour
 
     private void HandleInteraction()
     {
-        if (NeedKey)
+        if (PlayerPrefs.GetInt("HasCutscenePlayed", 0) == 0)  // Überprüft, ob die Cutscene in Szene 3 abgespielt wurde
         {
-            if (Inventory.GetKey)
-            {
-                OpenDoor();
-                PlayUnlockedDialogue();
-                if (targetDialogueTrigger != null)
-                {
-                    targetDialogueTrigger.MakeCharacterVisible();
-
-                    GameObject targetObj = targetDialogueTrigger.gameObject;
-                    VisibilityStateManager.SetVisibilityState(targetObj, true);
-                }
-            }
-            else
-            {
-                PlayLockedDialogue();
-                if (targetDialogueTrigger != null)
-                {
-                    targetDialogueTrigger.gameObject.SetActive(false);
-
-                    GameObject targetObj = targetDialogueTrigger.gameObject;
-                    VisibilityStateManager.SetVisibilityState(targetObj, false);
-                }
-            }
+            SceneManager.LoadScene(thirdScene);  // Szene 3 mit Cutscene
+            PlayCutscene();
         }
         else
         {
-            OpenDoor();
-            PlayUnlockedDialogue();
+            SceneManager.LoadScene(fourthScene);  // Wenn die Cutscene schon abgespielt wurde, gehe direkt zu Szene 4
         }
     }
 
-    public void OpenDoor()
+    public void PlayCutscene()
     {
-        Debug.Log("Tür wird geöffnet...");
-        SceneManager.LoadScene(scene);
-    }
-
-    private void PlayLockedDialogue()
-    {
-        if (doorLockedDialogue != null && dialogueSystem != null)
+        if (videoPlayer != null)
         {
-            dialogueSystem.InitiateDialogue(doorLockedDialogue);
+            videoPlayer.Play();  // Video für die Cutscene starten
+        }
+
+        // Nachdem die Cutscene abgespielt wurde, speichere, dass sie gesehen wurde
+        PlayerPrefs.SetInt("HasCutscenePlayed", 1);  // Setzt das Flag, dass die Cutscene abgespielt wurde
+        PlayerPrefs.Save();  // Speichert den Wert
+    }
+
+    public void GoToNextLevel()
+    {
+        if (PlayerPrefs.GetInt("HasCutscenePlayed", 0) == 1)
+        {
+            // Wenn die Cutscene in Szene 3 bereits abgespielt wurde, gehe direkt zu Szene 4
+            SceneManager.LoadScene(fourthScene);
         }
     }
 
-    private void PlayUnlockedDialogue()
+    public void ReturnToLevel2()
     {
-        if (doorUnlockedDialogue != null && dialogueSystem != null)
-        {
-            dialogueSystem.InitiateDialogue(doorUnlockedDialogue);
-        }
+        // Wenn du von Szene 4 zurück zu Szene 2 gehst, wird keine Cutscene in Szene 2 abgespielt
+        SceneManager.LoadScene(secondScene);
+    }
+
+    public void ReturnToScene4()
+    {
+        // Wenn du von Szene 2 auf Szene 4 gehst, nach der Cutscene in Szene 3, gehe direkt zu Szene 4
+        SceneManager.LoadScene(fourthScene);
     }
 }

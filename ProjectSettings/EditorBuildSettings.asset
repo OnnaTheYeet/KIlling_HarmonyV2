@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Intro.unity
     guid: 22e0744bcd9ac7c4890ebb60b0d2a832
+  - enabled: 1
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_MallHallway.unity
+    guid: f8f37e0d3330fce478173bbbe011765b
+  - enabled: 1
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Cutszene_2.unity
+    guid: e3a5a97901a379a488d89554c07e6661
+  - enabled: 1
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Lobby.unity
+    guid: 5ba4ca12d57ce46428e1a9d2b965a71e
   m_configObjects: {}
