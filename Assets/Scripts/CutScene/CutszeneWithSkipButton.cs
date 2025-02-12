@@ -74,7 +74,7 @@ public class CutszeneWithSkipButton : MonoBehaviour
     private void LoadNextScene()
     {
         Debug.Log("Lade nächste Szene...");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     void OnDestroy()

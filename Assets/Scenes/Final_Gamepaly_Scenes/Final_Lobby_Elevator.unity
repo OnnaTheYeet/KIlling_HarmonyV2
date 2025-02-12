@@ -6075,13 +6075,62 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 717d06bb170d5c947b5322275dec887f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1178762536}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 717d06bb170d5c947b5322275dec887f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1178762537}
   m_SourcePrefab: {fileID: 100100000, guid: 717d06bb170d5c947b5322275dec887f, type: 3}
 --- !u!4 &1178762534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 717d06bb170d5c947b5322275dec887f, type: 3}
   m_PrefabInstance: {fileID: 1178762533}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1178762535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 717d06bb170d5c947b5322275dec887f, type: 3}
+  m_PrefabInstance: {fileID: 1178762533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1178762536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178762535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8885b8f676ffdda47ba02d8f8956dba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 12
+  NeedKey: 0
+  dialogueSystem: {fileID: 0}
+  doorLockedDialogue: {fileID: 0}
+  doorUnlockedDialogue: {fileID: 0}
+--- !u!65 &1178762537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178762535}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.042919, y: 6.548769, z: 0.8036859}
+  m_Center: {x: 0, y: 0, z: 0.0080013275}
 --- !u!1 &1189554284
 GameObject:
   m_ObjectHideFlags: 0
