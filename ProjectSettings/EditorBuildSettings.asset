@@ -9,36 +9,39 @@ EditorBuildSettings:
     path: Assets/Scenes/GamePlayScene/MainMenu.unity
     guid: fd58899fe7c3e4145b2c5ef31587c5bf
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/Prolog.unity
-    guid: 78ed29bfff22e0f47808545a753ae05b
-  - enabled: 0
-    path: Assets/Scenes/Prototyp2.unity
-    guid: 86ee794e876757340ac9b3cd75d97700
-  - enabled: 0
-    path: Assets/Scenes/EmptyRoom.unity
-    guid: e0957f3c9d297054e90cf21dc0e408e7
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Intro.unity
+    guid: 22e0744bcd9ac7c4890ebb60b0d2a832
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/Lobby.unity
-    guid: 0981e4dd0571911439591d374f6c94fe
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_MallHallway_CutScene.unity
+    guid: f8f37e0d3330fce478173bbbe011765b
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/ToiletteHall.unity
-    guid: 61f16024dee6df04faa0a4a4ba58d18d
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Cutszene_2.unity
+    guid: e3a5a97901a379a488d89554c07e6661
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/ToToilete.unity
-    guid: c61db1cf53399984c833f8edab7cbb90
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Lobby.unity
+    guid: 5ba4ca12d57ce46428e1a9d2b965a71e
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/RechteToilette.unity
-    guid: ccd8d9a0bba57a843b183b9faa6f76cc
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_MallHallway_Gameplay.unity
+    guid: 4b6b775dad14b144e9195d10dd302f91
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/LinkeToilette.unity
-    guid: 887dea3fa85322148ae22f1260668395
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Lobby_Elevator.unity
+    guid: 2233edcd45b2f0f48ae32f5dc06d1032
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/Supermarkt.unity
-    guid: 90e3576717e4bf346bb14a8286c6d515
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_Lobby_Toilette.unity
+    guid: 7ce736a91f20a0d4e8a6bac4e1703ae8
   - enabled: 1
-    path: Assets/Scenes/GamePlayScene/Murder.unity
-    guid: 820d510275381b04d80597154f4532bd
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_W.Toilette.unity
+    guid: 3f7bb05d3737232478ef1fbb3d0c72cb
   - enabled: 1
-    path: Assets/Scenes/CutSzene/Intro_Cutszene.unity
-    guid: 55d9e5c9af1001e449d1967117a062ff
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_M.Toilette 1.unity
+    guid: a2b0db0b3b0971541afc6d516eaf45c9
+  - enabled: 1
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_MallHallway_EighttwelveGameplay.unity
+    guid: 15289d6ab52947e4e96a3e500934bea3
+  - enabled: 1
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_EightTwelve.unity
+    guid: 86c606abb7723cd4e86ae6795926de57
+  - enabled: 1
+    path: Assets/Scenes/Final_Gamepaly_Scenes/Final_DvDLaden.unity
+    guid: 3059c0ab3178d3d41aeda66f4ccd03f6
   m_configObjects: {}

@@ -23,14 +23,21 @@ public class VisibilityController : MonoBehaviour
 
         if (DialogueManager.Instance != null)
         {
-            if (changeVisibilityAtStart)
+            if (DialogueManager.Instance.HasDialoguePlayed(triggerDialogue))
             {
-                DialogueManager.Instance.OnDialogueStarted += HandleDialogueStarted;
+                UpdateVisibility();
             }
-
-            if (changeVisibilityAtEnd)
+            else
             {
-                DialogueManager.Instance.OnDialogueFinished += HandleDialogueFinished;
+                if (changeVisibilityAtStart)
+                {
+                    DialogueManager.Instance.OnDialogueStarted += HandleDialogueStarted;
+                }
+
+                if (changeVisibilityAtEnd)
+                {
+                    DialogueManager.Instance.OnDialogueFinished += HandleDialogueFinished;
+                }
             }
         }
     }
@@ -49,6 +56,7 @@ public class VisibilityController : MonoBehaviour
         if (startedDialogue == triggerDialogue && changeVisibilityAtStart)
         {
             UpdateVisibility();
+            DialogueManager.Instance.MarkDialogueAsPlayed(triggerDialogue);
         }
     }
 
@@ -57,6 +65,7 @@ public class VisibilityController : MonoBehaviour
         if (finishedDialogue == triggerDialogue && changeVisibilityAtEnd)
         {
             UpdateVisibility();
+            DialogueManager.Instance.MarkDialogueAsPlayed(triggerDialogue);
         }
     }
 
