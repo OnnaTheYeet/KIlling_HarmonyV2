@@ -1295,6 +1295,7 @@ GameObject:
   - component: {fileID: 778021445}
   - component: {fileID: 778021444}
   - component: {fileID: 778021446}
+  - component: {fileID: 778021447}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -1342,6 +1343,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f9ecbd4af4735045b1c13d6574a740c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &778021447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778021443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880d64ba742b2354393aaa551d3de0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 8be318280bb04f244963ac5e0564a37b, type: 3}
 --- !u!1 &813429096
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,7 +2757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7980695763474517776, guid: d462c50004f27e64d94d70590bb8374c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8244727152791678028, guid: d462c50004f27e64d94d70590bb8374c, type: 3}
       propertyPath: m_Pivot.x
@@ -2824,6 +2838,10 @@ PrefabInstance:
     - target: {fileID: 8244727152791678028, guid: d462c50004f27e64d94d70590bb8374c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8559848010406473809, guid: d462c50004f27e64d94d70590bb8374c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
