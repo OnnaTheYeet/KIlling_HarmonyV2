@@ -175,6 +175,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2403846977154146568, guid: 294a5aea3a0b7cb43af58dca3b1b45b0, type: 3}
+      propertyPath: sensivity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403846977154146568, guid: 294a5aea3a0b7cb43af58dca3b1b45b0, type: 3}
+      propertyPath: smoothTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2403846977154146568, guid: 294a5aea3a0b7cb43af58dca3b1b45b0, type: 3}
       propertyPath: MaxYRotation
       value: 50
       objectReference: {fileID: 0}
