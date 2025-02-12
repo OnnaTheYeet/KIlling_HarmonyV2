@@ -6,6 +6,8 @@ public class Cutszene : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
 
+    public int sceneToLoad = 0;  
+
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
@@ -18,7 +20,7 @@ public class Cutszene : MonoBehaviour
 
     public void OnVideoEnd(VideoPlayer vp)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     void OnDestroy()
