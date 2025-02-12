@@ -15,7 +15,10 @@ MonoBehaviour:
   lines:
   - line: "\u201COw\u2026 ow\u2026\u201D "
     actor: {fileID: 11400000, guid: f95d8cc5ab44b8a4cbcc83bdd296a5ce, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: f95d8cc5ab44b8a4cbcc83bdd296a5ce, type: 2}
+      expression: 1
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -24,7 +27,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CY-Y-Yu\u2026 YUMI!! You\u2019re here too?!\u201D "
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 1
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -33,7 +39,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201C\u2026\u201D"
     actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 0
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -42,7 +51,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CHuh\u2026?\u201D "
     actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 1
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -51,7 +63,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201C!!!\u201D"
     actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 3
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -80,7 +95,10 @@ MonoBehaviour:
   - line: "\u201CI\u2019m so glad to see you too. So you don\u2019t know where we
       are either, huh?\u201D "
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -90,7 +108,10 @@ MonoBehaviour:
   - line: "\u201C(sniff) N-no, I\u2019m sorry\u2026 I was too terrified to go anywhere.
       I just stayed here\u2026\u201D "
     actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 1
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -108,7 +129,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CHey, it\u2019s okay! There\u2019s nothing to apologize for.\u201D"
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 1
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -117,7 +141,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CLet\u2019s look for a way out together, alright?\u201D"
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 0
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -135,7 +162,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: "\u201CMhm! Yes, let\u2019s do this!!\u201D "
     actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 3
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0
@@ -144,7 +174,10 @@ MonoBehaviour:
     dialogBoxBackground: {fileID: 0}
   - line: '(Smiles) '
     actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
-    spriteChanges: []
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
     backgroundChanges: []
     fontAsset: {fileID: 0}
     fontSize: 0

@@ -8,6 +8,7 @@ public class CutszeneWithSkipButton : MonoBehaviour
     private VideoPlayer videoPlayer;
     public Button skipButton;
     private bool buttonVisible = false;
+    public int sceneToLoad = 0;
 
     void Start()
     {
@@ -74,7 +75,7 @@ public class CutszeneWithSkipButton : MonoBehaviour
     private void LoadNextScene()
     {
         Debug.Log("Lade nächste Szene...");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     void OnDestroy()

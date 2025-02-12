@@ -191,18 +191,10 @@ public class DialogueSystem : MonoBehaviour
 
         if (dialogueCanvas.TryGetComponent(out Image dialogBoxImage))
         {
-            if (line.dialogBoxBackground != null)
-            {
-                dialogBoxImage.sprite = line.dialogBoxBackground;
-            }
-            else if (currentDialogue.dialogBoxBackground != null)
-            {
-                dialogBoxImage.sprite = currentDialogue.dialogBoxBackground;
-            }
+            dialogBoxImage.sprite = line.dialogBoxBackground ?? currentDialogue.dialogBoxBackground;
         }
 
         lineToShow = line.line;
-
         nameTag.text = line.actor != null ? line.actor.Name : "";
 
         totalTimeToType = lineToShow.Length * timePerLetter;
@@ -210,8 +202,20 @@ public class DialogueSystem : MonoBehaviour
         visibleTextPercent = 0f;
         text.text = "";
 
+        if (line.spriteChanges != null)
+        {
+            foreach (var spriteChange in line.spriteChanges)
+            {
+                if (spriteChange.actor != null && spriteChange.expression >= 0 && spriteChange.expression < spriteChange.actor.sprites.Count)
+                {
+                    spriteManager.Set(spriteChange.actor.sprites[spriteChange.expression], spriteChange.onScreenImageID);
+                }
+            }
+        }
+
         index += 1;
     }
+
 
     IEnumerator SkipText()
     {

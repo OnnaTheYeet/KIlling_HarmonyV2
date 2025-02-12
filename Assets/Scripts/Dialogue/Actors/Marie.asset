@@ -13,3 +13,8 @@ MonoBehaviour:
   m_Name: Marie
   m_EditorClassIdentifier: 
   Name: Marie
+  sprites:
+  - {fileID: 21300000, guid: 1ebe0a1f5e14fa844ab37370dc2f4ee9, type: 3}
+  - {fileID: 21300000, guid: 1c417966e8d91774aa6ae1cd55ff8bfa, type: 3}
+  - {fileID: 21300000, guid: 59f690ead7e887040bf3406aac810e21, type: 3}
+  - {fileID: 21300000, guid: 01a28e7be296e1a4697ed2bfc19bd2fe, type: 3}
