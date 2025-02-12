@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 6 Restroom
+  m_EditorClassIdentifier: 
+  lines:
+  - line: "*Hiro finds Yumi in the girls\u2019 restroom*"
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.754717, g: 0.7395257, b: 0.16731933, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi\u2026?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201COh, Hiro\u2026 it\u2019s just you\u2026\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHey, are you feeling any better?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026\u201D (still terrified, hiding her face)"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYu\u2014\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSuper sugar happy smiiiile!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CH-Huh?!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CAw geez, a sad face just isn\u2019t me, right? That wouldn\u2019t
+      match my super-sunny persona.\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSorry you had to see that, Hiro. Let\u2019s just forget it happened,
+      okay?\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI\u2019m feeling super-duper fine now!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi\u2026\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CDon\u2019t worry about me, Hiro-chan. As long as we stick together,
+      nothing bad can happen!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHeh\u2026 yeah!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CC\u2019mon, let\u2019s go talk to the others. Maybe we can find
+      a way to outsmart that crazy Mastermind!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHeh\u2026 maybe you\u2019re right.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "(Yumi grabs Hiro\u2019s hand.)"
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.6886792, g: 0.6426845, b: 0.12019401, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CLet\u2019s do this!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: 
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0, g: 0, b: 0, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 1
+  dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
+  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}

@@ -144,8 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8885b8f676ffdda47ba02d8f8956dba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 10
-  NeedKey: 1
+  scene: 11
+  NeedKey: 0
   dialogueSystem: {fileID: 0}
   doorLockedDialogue: {fileID: 0}
   doorUnlockedDialogue: {fileID: 0}

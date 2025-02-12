@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 16 Mr Rabbit
+  m_EditorClassIdentifier: 
+  lines:
+  - line: "\u201CWhat the actual hell?! A damn rabbit plush?\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThis is some sick joke!\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CPardon me, but meeting you in person would be\u2026 counterproductive.
+      So I appear as a cute Mister Rabbit plushy! Isn\u2019t it adorable?~\u201D"
+    actor: {fileID: 11400000, guid: 02d82ffacfbadb548ae0f4708eaf0024, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI\u2019d love to tear that stupid rabbit head right off\u2026\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CLadies and gentlemen, please step into the elevator!\u201D"
+    actor: {fileID: 11400000, guid: 02d82ffacfbadb548ae0f4708eaf0024, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\"As if we have any other choice. Staying on this floor isn\u2019t an
+      option.\""
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\"No matter what happens next, I have to prove I\u2019m not the killer.
+      I can\u2019t let these twisted secrets tear us apart and force us to kill each
+      other.\""
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\"I will solve this case\u2014no matter what it takes!\""
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 0
+  dialogBoxBackground: {fileID: 0}
+  fontAsset: {fileID: 0}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}

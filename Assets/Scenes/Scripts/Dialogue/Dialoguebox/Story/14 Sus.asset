@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 14 Sus
+  m_EditorClassIdentifier: 
+  lines:
+  - line: "\u201CClues? Are we supposed to play detective now?\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSeems like it\u2026\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi! Mary!\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CGah!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CDon\u2019t you dare scream at us like that, jerk!\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThe three of us will search together. Hiro, sorry, but you\u2019re
+      still our prime suspect. You search alone, but you better not think about doing
+      anything stupid, we are watching you.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYeah, that\u2019s fine.\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi\u2026!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 1
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 (looks away)\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 (disappointed)\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI mean, okay\u2026 I guess.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "(They all suspect me. I guess I can\u2019t blame them, but it still hurts.
+      I need to find every piece of evidence before they do.)"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7924528, g: 0.6606323, b: 0.10840159, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "(One of them must be the killer, and they\u2019ll try to hide or tamper
+      with clues. Time to get serious.)"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7924528, g: 0.6606323, b: 0.10840159, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 0
+  dialogBoxBackground: {fileID: 0}
+  fontAsset: {fileID: 0}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}
