@@ -2670,6 +2670,7 @@ GameObject:
   - component: {fileID: 1857488150}
   - component: {fileID: 1857488149}
   - component: {fileID: 1857488148}
+  - component: {fileID: 1857488151}
   m_Layer: 5
   m_Name: Gamma
   m_TagString: Untagged
@@ -2785,6 +2786,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857488146}
   m_CullTransparentMesh: 1
+--- !u!114 &1857488151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857488146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c54b685e53f79b4389af574c22d6c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gammaScrollbar: {fileID: 1857488148}
+  directionalLight: {fileID: 0}
 --- !u!1 &1869887808
 GameObject:
   m_ObjectHideFlags: 0
