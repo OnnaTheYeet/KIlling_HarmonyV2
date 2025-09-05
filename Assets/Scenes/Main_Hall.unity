@@ -398,6 +398,7 @@ MonoBehaviour:
   skipTextWaitTime: 0.1
   spriteManager: {fileID: 0}
   backgroundManager: {fileID: 0}
+  defaultFontAsset: {fileID: 0}
   debugDialogueContainer: {fileID: 0}
 --- !u!1 &1521089842
 GameObject:
@@ -431,11 +432,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8885b8f676ffdda47ba02d8f8956dba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 5
-  NeedKey: 0
-  dialogueSystem: {fileID: 0}
-  doorLockedDialogue: {fileID: 0}
-  doorUnlockedDialogue: {fileID: 0}
+  firstScene: 0
+  secondScene: 0
+  thirdScene: 0
+  fourthScene: 0
 --- !u!65 &1521089844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -610,69 +610,11 @@ RectTransform:
   m_AnchoredPosition: {x: -195.9, y: 26.2}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1794614544
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -196.71616
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -9.797796
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -644.16876
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
-      propertyPath: m_Name
-      value: Mall Platzhalter (ohne Fremdarbeit) Stand 25.11.2024 13_47Uhr
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a31ce8fc0bfcac41b5afd95be311310, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1168674888}
   - {fileID: 1117564928}
-  - {fileID: 1794614544}
   - {fileID: 1521089847}
   - {fileID: 284924906}

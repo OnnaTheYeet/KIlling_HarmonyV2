@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Ken
   sprites:
+  - {fileID: 21300000, guid: 29305025238e4e749929f53d4913b4e1, type: 3}
   - {fileID: 21300000, guid: 1ab0ceb7a3914d6448ca4fe603c6199a, type: 3}
+  - {fileID: 21300000, guid: 5af7e6ae030ba674790777f9c1b1ac60, type: 3}
+  - {fileID: 21300000, guid: f6cfbbac602814143bb81f27eb4dd0b1, type: 3}

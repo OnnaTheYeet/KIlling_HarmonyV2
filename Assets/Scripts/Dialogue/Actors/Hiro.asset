@@ -15,4 +15,5 @@ MonoBehaviour:
   Name: Hiro
   sprites:
   - {fileID: 21300000, guid: cd9d3cff9d3e23641acf80d017491e4e, type: 3}
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: 5d296eb3f0ced4d4684d83875aa11650, type: 3}
+  - {fileID: 21300000, guid: e40704d93a3cf27498419573cd3cc2a3, type: 3}

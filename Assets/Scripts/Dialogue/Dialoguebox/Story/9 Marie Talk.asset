@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 9 Marie Talk
+  m_EditorClassIdentifier: 
+  lines:
+  - line: '*After finally finding Marie, Hiro confronts her*'
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7830189, g: 0.725803, b: 0.13665895, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CMarie, what is your problem?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhy did you go off on Yumi like that?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 (arms crossed, looks guilty)\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSorry\u2026 I guess I went too far.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 0}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CUh\u2026\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYour friend looks like someone I absolutely despise\u2026 and the
+      way she acts\u2026 it just set me off. I should\u2019ve controlled myself.
+      My bad.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CUsually, when I\u2019m pissed, I\u2019d pick up my guitar, jam out,
+      and cool my head. But here, everything feels so damn oppressive. There\u2019s
+      nothing to help me chill.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 (sigh)\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: (A noise echoes from a vent.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7843138, g: 0.7254902, b: 0.13725491, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWhat was that sound?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CLook, I don\u2019t like your friend, but I\u2019m sorry for what
+      I did.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CMarie\u2026\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CDon\u2019t give me that face! Haha.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI\u2019ll be alright.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CBut can you do me a favor? Could you bring her here? If I go after
+      her myself, she\u2019ll just freak out even more.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CAnd will you really apologize this time, not just scream at her?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThat\u2019s a promise, brother.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026 Fine, I\u2019ll go get her.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThanks. I\u2019ll hang in the lobby. Just need a minute to, y\u2019know,
+      gather myself.\u201D"
+    actor: {fileID: 11400000, guid: fe5b2e9b4c91af14e90c920cbc4d5648, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: " \u201CAlright.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: (I should go near the elevator or the dvd store next to it, i think the
+      sound came from around there)
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7830189, g: 0.7561051, b: 0.09972411, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 1
+  dialogBoxBackground: {fileID: 21300000, guid: 5841b88ecfa78944099415c08feba740, type: 3}
+  fontAsset: {fileID: 0}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}

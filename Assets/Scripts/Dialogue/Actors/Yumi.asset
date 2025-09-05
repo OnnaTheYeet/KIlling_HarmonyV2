@@ -15,3 +15,6 @@ MonoBehaviour:
   Name: Yumi
   sprites:
   - {fileID: 21300000, guid: 3562094cd3560e945b2637642e7fe9e2, type: 3}
+  - {fileID: 21300000, guid: 74ac60c8608e6b94a9c13cbe843c90f2, type: 3}
+  - {fileID: 21300000, guid: 3ee64dc03a67e7e4f856ea3b6bf7193b, type: 3}
+  - {fileID: 21300000, guid: c149b0cbb9222f9408ed927655018393, type: 3}

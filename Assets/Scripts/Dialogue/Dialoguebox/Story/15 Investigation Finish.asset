@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: 15 Investigation Finish
+  m_EditorClassIdentifier: 
+  lines:
+  - line: '"Yumi please listen to me i found evidence proving im not the kil-"'
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHellooooo! I think you\u2019ve got enough clues now, darlings! Head
+      to the elevator for the grand finale, okay?\u201D"
+    actor: {fileID: 11400000, guid: 02d82ffacfbadb548ae0f4708eaf0024, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CChop-chop!\u201D"
+    actor: {fileID: 11400000, guid: 02d82ffacfbadb548ae0f4708eaf0024, type: 2}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThat twisted freak\u2026 we\u2019re nothing but puppets to him.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: (the elevator opens and a plushy Mister Rabbit is waiting)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7735849, g: 0.68862516, b: 0.09852261, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 0
+  dialogBoxBackground: {fileID: 0}
+  fontAsset: {fileID: 0}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}

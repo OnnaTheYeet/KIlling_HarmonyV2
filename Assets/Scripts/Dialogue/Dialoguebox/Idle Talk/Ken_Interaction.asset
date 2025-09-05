@@ -1,0 +1,322 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cd04e3d61faf6499171e6aadac98ae, type: 3}
+  m_Name: Ken_Interaction
+  m_EditorClassIdentifier: 
+  lines:
+  - line: (Ken is doing Pushups)
+    actor: {fileID: 0}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.754717, g: 0.6257156, b: 0.13883947, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201COne-twelve\u2026 one-thirteen\u2026 one-fourteen\u2026\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 0}
+      expression: 3
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CIs he doing push-ups?!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSeems like it\u2026\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CTwo-twenty-three\u2026 two-twenty-four\u2026\u201D \u201C!!! Visitors!\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 1
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSorry, I didn\u2019t notice you guys. Was just clearing my head.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: (He stands up, still cheerful)
+    actor: {fileID: 0}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 3
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.8207547, g: 0.6917011, b: 0.096787095, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CSo, can I help you two with anything?\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 3
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYou\u2019re a police officer, right? Can\u2019t you just arrest
+      the bad guy? Or call for backup?\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CUh, well\u2026 I wish it were that simple.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CYumi, come on!\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CWait, calling for help\u2026 do we have our phones?\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI don\u2019t have my phone\u2014left it at work. Just my smartwatch.
+      Heh.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Yumi and Hiro check their pockets.)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7830189, g: 0.7069054, b: 0.1071111, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201COMG yes! My phone\u2019s here! And it still turns on!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 3
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CI need to check on my Tamopet! Aww my fluffy digital baby, you\u2019re
+      okay!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201C\u2026What the\u2014\u201D (confused)"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CJust ignore her. It\u2019s a virtual pet game she\u2019s obsessed
+      with.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CMy Tamopet is REAL, Hiro!\u201D (pouts) \u201CDon\u2019t belittle
+      it! You\u2019re so uncool!\u201D"
+    actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: 869555eca288b4e4e9255b78273135bb, type: 2}
+      expression: 2
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHeh\u2026 okay, okay. Whatever you say.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: (Hiro tries to make a call)
+    actor: {fileID: 0}
+    spriteChanges: []
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 0.7735849, g: 0.7065598, b: 0.11311854, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CNo internet, no signal. Should\u2019ve figured.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CGuess we\u2019re stuck in the middle of nowhere\u2014or there\u2019s
+      a signal jammer.\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CThat makes sense. My SIM card\u2019s in, but still no reception.\u201D"
+    actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: a2f9263fb96e14745b0166bfd7648d5f, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  - line: "\u201CHmm\u2026 sorry guys, I\u2019d like some time alone to think. If
+      you need my help with anything, just ask, alright?\u201D"
+    actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+    spriteChanges:
+    - actor: {fileID: 11400000, guid: ab63be64f204a6849a3affc4d2347bd6, type: 2}
+      expression: 0
+      onScreenImageID: 0
+    backgroundChanges: []
+    fontAsset: {fileID: 0}
+    fontSize: 0
+    fontStyle: 0
+    fontColor: {r: 1, g: 1, b: 1, a: 1}
+    dialogBoxBackground: {fileID: 0}
+  playOnlyOnce: 0
+  dialogBoxBackground: {fileID: 0}
+  fontAsset: {fileID: 0}
+  fontSize: 52
+  fontStyle: 0
+  fontColor: {r: 1, g: 1, b: 1, a: 1}
